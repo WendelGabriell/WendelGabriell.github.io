@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of e For in</title>
+</head>
+<body>
+    <script>
+        let cores = ["azul, vermelho, branco"];
+        // Retornando Valores
+        for(let cor of cores){
+             console.log(cor);
+        }
+
+        
+
+        let pessoa = {nome:"Raul", idade: 17, cargo: "Desenvolvedor Junior"};
+
+        // Retornando refências - Chave valor
+        for(let propriedade in pessoa){
+            console.log(`${propriedade}: ${pessoa[propriedade]}`)
+        }
+       
+    </script>
+</body>
+</html>

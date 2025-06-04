@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <form id="formulario">
+     <fieldset>
+        <legend>Calculo do IMC</legend>
+        <div>
+            <label for="id_nome"> Nome:<br>
+                <input type="text" id="id_nome" placeholder="Informe o Nome" required>
+            </label>
+        </div>
+        <div>
+            <label for="id_altura"> Altura:<br>
+                <input type="text" id="id_altura" placeholder="Informe a Altura" required>
+            </label>
+        </div>
+        <div>
+            <label for="id_peso"> peso:<br>
+                <input type="number" id="id_peso" placeholder="Informe o Peso" required>
+            </label>
+        </div>
+        <div>
+            <button type="reset" id="limpar">Limpar</button>
+            <button type="submit" id="verificar">Verificar</button>
+        </div>
+        
+        <div id="resultado"></div>
+    </fieldset>
+   </form>
+    <script src="script.js"></script>
+</body>
+</html>

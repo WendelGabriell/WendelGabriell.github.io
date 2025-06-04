@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Verificando o tipo do Triângulo</h1>
+    <p>Digite os lados do Triângulo abaixo</p>
+
+    <form id="form_tri">
+      <fieldset>
+        <legend>Identificação de triangulos</legend>
+        <label for="id_lado1"
+          >Lado1:
+          <input
+            type="number"
+            name="lado1"
+            id="id_lado1"
+            minlength="1"
+            maxlength="10"
+            placeholder="Informe o tamanho"
+            required
+          /> </label
+        ><br />
+        <label for="id_lado2"
+          >Lado2:
+          <input
+            type="number"
+            name="lado2"
+            id="id_lado2"
+            minlength="1"
+            maxlength="10"
+            placeholder="Informe o tamanho"
+            required
+          /> </label
+        ><br />
+        <label for="id_lado1"
+          >Lado3:
+          <input
+            type="number"
+            name="lado3"
+            id="id_lado3"
+            minlength="1"
+            maxlength="10"
+            placeholder="Informe o tamanho"
+            required
+          />
+        </label>
+
+        <div class="bootes">
+          <button id="verificar" type="submit">Verificar</button>
+          <button id="limpar" type="reset">limpar Dados</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="./scripty.js"></script>
+  </body>
+</html>

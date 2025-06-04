@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <form id="formulario">
+        <label for="id_numero"> Número
+            <input type="number" id="id_numero" placeholder="Informe o número" maxlength="10" name="numero" required>
+        </label>
+        <label for="id_operacao"> 
+            <select name="operacao" id="id_operacao">
+                <option value="+">Adicao</option>
+                <option value="-">Subtracao</option>
+                <option value="*">Multiplicação</option>
+                <option value="/">Divisão</option>
+            </select>
+        </label>
+        <div class="botoes">
+            <button type="submit" id="calcular">Calcular</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </div>
+        <div id="resultado" ></div>
+        <script src="scripts.js"></script>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body>
+    <h1>Estruturas Condicionais - Switch case</h1>
+    <script>
+        
+        let nomeDia
+        
+        alert(nomeDia);
+        let hoje = new Date();
+        let diaDaSemana = hoje.getDay() + 1
+        console.log(JSON.parse(hoje.getDay()))
+
+        switch (diaDaSemana) {
+            case 1:
+                nomeDia = "Segunda";
+                break;
+            case 2:
+                nomeDia = "Terça";
+                break;
+            case 3:
+                nomeDia = "Quarta";
+                break;
+            case 4:
+                nomeDia = "Quinta";
+                break;
+            case 5:
+                nomeDia = "Sexta";
+                break;
+            case 6:
+                nomeDia = "Sábado";
+                break;
+            case 7:
+                nomeDia = "Domingo";
+                break;
+        
+            default:
+                console.log("Opção inválida");
+                break;
+        }
+
+       
+    </script>
+</body>
+</html>

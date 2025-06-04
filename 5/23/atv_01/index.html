@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Autoescola - Inscrição</h1>
+    <p>Informe sua idade abaixo para verificarmos sua elegibilidade</p>
+
+    <form id="formulario">
+        <label for="id_idade"> Idade:
+            <input id="id_idade" type="number" name="idade" placeholder="Informe sua idade">
+        </label>
+        <div class="botao">
+            <button type="submit">Verificar</button>
+        </div>
+        <div id="resultado"></div>
+    </form>
+    <script>
+        let formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", (evento) =>{
+            evento.preventDefault();
+            let idade = document.getElementById("id_idade").value;
+            let resultado = document.getElementById("resultado");
+            console.log(idade)
+
+            if (idade >= 18 && idade < 100) {
+
+                resultado.innerHTML = "<strong>Você está apto para o inicio</strong>"
+                if (idade < 50 && idade >18) {
+                    
+                    resultado.innerHTML = "<p>Você está apto para o inicio</><br><strong>Você fará a renovação da habilitação a cada 10 anos</strong>"
+                }
+                if (idade > 50 && idade <= 69) {
+                    resultado.innerHTML = "<p>Você está apto para o inicio</><br><strong>Você fará a renovação da habilitação a cada 5 anos</strong>"
+                    
+                }
+                if (idade >= 70) {
+                    resultado.innerHTML = "<p>Você está apto para o inicio</><br><strong>Você fará a renovação da habilitação a cada 3 anos</strong>"
+                }
+            }else{
+                resultado.innerHTML = "<strong>Você está inapto para o inicio</strong>"
+            }
+        })
+    </script>
+</body>
+</html>
